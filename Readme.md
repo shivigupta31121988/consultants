@@ -4,8 +4,8 @@ Followed the steps:
 
 terminal 
 => mkdir consultants <foldername>
-   cd consultants
-   truffle init
+=> cd consultants
+=> truffle init
 
 the init will create folders - contracts, migrations,test and create a truffle-config.js file
 
@@ -34,9 +34,9 @@ To verify the contract
 we perform the following commands within the terminal:
 
 => truffle console
-   let instance = await StoreValue.deployed()
-   instance.set(42)
-   instance.get()
+=> let instance = await StoreValue.deployed()
+=> instance.set(42)
+=> instance.get()
 
 This will provide details of the transaction which can be viewed on ganache too. Thhe gasUsed and transaction hash are to be noted.
 
