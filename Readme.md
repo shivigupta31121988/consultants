@@ -3,9 +3,9 @@ Created a simple contract using truffle config.
 Followed the steps:
 
 terminal 
-=> mkdir consultants <foldername>
-=> cd consultants
-=> truffle init
+* mkdir consultants <foldername>
+* cd consultants
+* truffle init
 
 the init will create folders - contracts, migrations,test and create a truffle-config.js file
 
@@ -15,7 +15,7 @@ Also verify the truffle-config.js file is also pointing to the same version.
 uncomment the section containing development section of module.exports in the config file.
 
 Post creating the contract file, run the command 
-=> truffle compile
+* truffle compile
 
 This will compile the contract and create a new file Contract.json in build/contracts folder which contains the meta data about the compiled contract.
 
@@ -25,7 +25,7 @@ To setup ganache, we add a workspace and provide the path of the truffle-config.
 
 Next we create a migrations file named "1_initial_migration.js" to migrate or deploy the contract onto the blockchain.
 Then we run the command 
-=> truffle migrate
+* truffle migrate
 
 This will deploy the contract into ganache.
 
@@ -33,10 +33,10 @@ To verify the contract
 
 we perform the following commands within the terminal:
 
-=> truffle console
-=> let instance = await StoreValue.deployed()
-=> instance.set(42)
-=> instance.get()
+* truffle console
+* let instance = await StoreValue.deployed()
+* instance.set(42)
+* instance.get()
 
 This will provide details of the transaction which can be viewed on ganache too. Thhe gasUsed and transaction hash are to be noted.
 
